@@ -1,10 +1,22 @@
 
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+h1, h2, h3, h4, h5, h6, p {
+margin: 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;
+}
+/*------common---------*/
+.container {
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
 }
 
 button {
@@ -17,43 +29,72 @@ body {
     background-color: #fff;
 }
 /*----- header---*/
-
-.page-logo-web {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5; 
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
 }
-.page-logo-studio {
+
+.header-nav {
+    display: flex;
+    align-items: center;  
+}
+
+.header-container {
+   display: flex;
+   align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;   
+}
+
+.logo {
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4d5ae5;
+}
+.header-logo .logo-part {
 color: #2e2f42;
 }
-.menu-link {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;  
-}
-.menu-link:hover,
-.menu-link:focus {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #404bbf;  
+.header-logo{
+    padding: 24px 0;
+    margin-right: 76px;
 }
 
+.nav-link {
+display: block;
+padding: 24px 0;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #2e2f42;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+ /*---------header address---------*/
 .head-address {
+   margin-left: auto;
    font-style: normal; 
 }
 
+.menu-address {
+    display: flex;
+    align-items: center;  
+    gap: 40px;
+}
 
 .menu-address-item {
+    display: block;
+    padding: 24px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
