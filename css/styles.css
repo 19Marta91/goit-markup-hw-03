@@ -263,6 +263,10 @@ color: #434455;
     border-radius: 0px 0px 4px 4px; 
 }
 /*-----------portfolio-----------*/
+..section-portfolio{
+    padding: 120px 0 120px 0;  
+}
+
 .portfolio-title {
     margin-bottom: 72px;
     font-weight: 700;
